@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "VideoDownloader Stream Catcher",
+  "version": "1.0.0",
+  "description": "在背景偵測分頁中的 HLS/DASH/MP4 串流與字幕，一鍵傳送至本機 VideoDownloader。",
+  "permissions": [
+    "webRequest",
+    "storage",
+    "tabs"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "VideoDownloader 串流偵測"
+  }
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    body {
+      width: 380px;
+      font-family: "Segoe UI", sans-serif;
+      margin: 12px;
+      color: #202124;
+    }
+    h3 {
+      margin: 0 0 8px 0;
+      font-size: 15px;
+    }
+    .toolbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+      font-size: 12px;
+      color: #5f6368;
+    }
+    .item {
+      border: 1px solid #dadce0;
+      border-radius: 6px;
+      padding: 8px;
+      margin-bottom: 8px;
+      background: #f8f9fa;
+    }
+    .url {
+      font-size: 11px;
+      word-break: break-all;
+      margin-bottom: 6px;
+      color: #3c4043;
+    }
+    .meta {
+      font-size: 11px;
+      color: #5f6368;
+      margin-bottom: 6px;
+    }
+    button {
+      cursor: pointer;
+      border: none;
+      border-radius: 4px;
+      padding: 5px 10px;
+      font-size: 12px;
+    }
+    .btn-send {
+      background: #1a73e8;
+      color: #fff;
+    }
+    .btn-clear {
+      background: #e8eaed;
+      color: #3c4043;
+    }
+    #status {
+      margin-top: 8px;
+      font-size: 12px;
+      color: #188038;
+    }
+  </style>
+</head>
+<body>
+  <h3>偵測到的串流</h3>
+  <div class="toolbar">
+    <span>點擊網址或按鈕即可傳送到下載器</span>
+    <button id="clearBtn" class="btn-clear">清除清單</button>
+  </div>
+  <div id="list"></div>
+  <div id="status"></div>
+  <script src="popup.js"></script>
+</body>
+</html>

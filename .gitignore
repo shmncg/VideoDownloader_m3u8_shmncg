@@ -1,0 +1,24 @@
+# Build & release artifacts
+build/
+dist/
+release/
+*.spec
+
+# Runtime & user data
+bin/
+output/
+temp/
+tasks.json
+*.mp4
+*.mkv
+*.ts
+*.m4s
+*.vtt
+*.srt
+
+# Python cache & environment
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
